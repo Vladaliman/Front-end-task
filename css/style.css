@@ -928,15 +928,15 @@ body {
 }
 
 .carousel__slide.img1 {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url("../../dist/Assets/Images/header-img-1440.jpg") center/cover no-repeat;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url("../Assets/Images/header-img-1440.jpg") center/cover no-repeat;
 }
 
 .carousel__slide.img2 {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url("../../dist/Assets/Images/mattia-righetti-CuC-b8f3RYc-unsplash.jpg") center/cover no-repeat;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url("../Assets/Images/mattia-righetti-CuC-b8f3RYc-unsplash.jpg") center/cover no-repeat;
 }
 
 .carousel__slide.img3 {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url("../../dist/Assets/Images/olav-tvedt--oVaYMgBMbs-unsplash.jpg") center/cover no-repeat;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url("../Assets/Images/olav-tvedt--oVaYMgBMbs-unsplash.jpg") center/cover no-repeat;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1378,7 +1378,7 @@ body {
 .featured {
   width: 100%;
   padding: 105px 0 105px;
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url("../../dist/Assets/Images/section-banner-1920.jpg") center/cover no-repeat;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url("../Assets/Images/section-banner-1920.jpg") center/cover no-repeat;
 }
 
 @media screen and (max-width: 580px) {
@@ -1634,15 +1634,15 @@ body {
 }
 
 .promo__img.q3 {
-  background: url("../../dist/Assets/Product-Images/product-card-audi-q3.png") center/contain no-repeat;
+  background: url("../Assets/Product-Images/product-card-audi-q3.png") center/contain no-repeat;
 }
 
 .promo__img.a4 {
-  background: url("../../dist/Assets/Product-Images/product-card-audi-a4.png") center/contain no-repeat;
+  background: url("../Assets/Product-Images/product-card-audi-a4.png") center/contain no-repeat;
 }
 
 .promo__img.a3 {
-  background: url("../../dist/Assets/Product-Images/product-card-audi-a3.png") center/contain no-repeat;
+  background: url("../Assets/Product-Images/product-card-audi-a3.png") center/contain no-repeat;
 }
 
 .promo__img.a3::before {
@@ -1662,7 +1662,7 @@ body {
 }
 
 .promo__img.q7 {
-  background: url("../../dist/Assets/Product-Images/product-card-audi-q7.png") center/contain no-repeat;
+  background: url("../Assets/Product-Images/product-card-audi-q7.png") center/contain no-repeat;
 }
 
 .promo__img.q7::before {
@@ -1966,7 +1966,7 @@ body {
   left: -325px;
   width: 1075px;
   height: 445px;
-  background: url("../../dist/Assets/Images/contact-form-img.png") no-repeat;
+  background: url("..Assets/Images/contact-form-img.png") no-repeat;
 }
 
 @media screen and (max-width: 1000px) {
@@ -2259,7 +2259,7 @@ body {
 }
 
 .product__image {
-  background: url("../../dist/Assets/Product-Images/product-card-audi-q7.png") center/contain no-repeat;
+  background: url("../Assets/Product-Images/product-card-audi-q7.png") center/contain no-repeat;
   height: 150px;
   width: 200px;
   max-width: 185px;
