@@ -1,0 +1,208 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.product {
+  background-color: #fefefe;
+  margin: 12% auto;
+  border: 1px solid #888;
+  width: 70%;
+  border-radius: 30px;
+  position: relative;
+}
+
+.close {
+  background: black;
+  padding: 5px 10px;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 50%;
+  position: absolute;
+  right: -12px;
+  top: -12px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.product__wrapper {
+  display: flex;
+
+  @media screen and (max-width: 1230px) {
+    flex-direction: column;
+  }
+}
+
+.product__left {
+  background-color: rgb(236, 236, 236);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 30px 30px;
+  text-align: center;
+  width: 50%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  @media screen and (max-width: 1230px) {
+    width: 100%;
+  }
+}
+
+.product__right {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 50%;
+  @media screen and (max-width: 1230px) {
+    width: 100%;
+  }
+}
+
+.product__image {
+  background: url("../../dist/Assets/Product-Images/product-card-audi-q7.png")
+    center / contain no-repeat;
+  height: 150px;
+  width: 200px;
+  max-width: 185px;
+  margin: 0 auto;
+  position: relative;
+  @media screen and (max-width: 380px) {
+    min-width: 100px;
+    width: 10px;
+  }
+}
+.product__image::before {
+  content: "new";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 8px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-stretch: condensed;
+  background-color: rgb(163, 5, 255);
+  color: $white;
+  border-radius: 3px;
+}
+
+.product__decription {
+  margin-bottom: 15px;
+  color: grey;
+}
+
+.product__name {
+  font-weight: 600;
+  font-size: 25px;
+  color: rgb(43, 43, 43);
+  margin-bottom: 40px;
+}
+
+.product__priceBtn {
+  background: rgb(43, 43, 43);
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 200px;
+  margin: 0 auto;
+  @media screen and (max-width: 380px) {
+    min-width: 0px;
+  }
+}
+
+.product__from {
+  font-size: 11px;
+  margin-bottom: 3px;
+}
+.product__price {
+  font-size: 25px;
+}
+
+.product__title {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.product__create {
+  color: dimgray;
+  margin-bottom: 30px;
+}
+/* Custom Checkbox */
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  cursor: pointer;
+  color: black;
+  @media screen and (max-width: 1230px) {
+    display: flex;
+  }
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+  background-color: rgb(43, 43, 43);
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 8px;
+  top: 5px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.product__addition {
+  display: inline-block;
+  margin-left: auto;
+}

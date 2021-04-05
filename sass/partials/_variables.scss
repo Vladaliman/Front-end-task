@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+//fonts
+$Montserrat: "Montserrat";
+$Roboto: "Roboto";
+//Layout
+$desktop-width: 1440px;
+$dekstop-wrapper: 1170px;
+//Colors
+$white: #fff;
+$black: #000;
+$gray: #4e4e4e;
+$gray-blue: #929aad;
+$gray-dark: #212121;
+$gray-light: #ccc5c5;
+$gray-lighter: #f3f3f5;
+$gray-lightest: #d8d8d8;
+$gray-paragraph: #ccc5c5;
+$green: #011f05;
+$green-light: #59ceb2;
+$red: #fa2a2a;
+$red-transparent: rgba(250, 42, 42, 0.1);
+
+html,
+body {
+  font-family: $Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: $gray-light;
+  letter-spacing: 0;
+}
+.span--red {
+  display: inline-block;
+  color: $red;
+  font-family: $Roboto;
+  font-size: 12px;
+  letter-spacing: 5px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 10px;
+  }
+  @media screen and (max-width: 580px) {
+    font-size: 8px;
+  }
+}
+.section-heading {
+  font-size: 38px;
+  letter-spacing: 0;
+  line-height: 47px;
+  font-weight: bold;
+  @media screen and (max-width: 1000px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  @media screen and (max-width: 580px) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+//Typoraphy
+.nav__link,
+.nav__drop-link {
+  color: rgba($color: $white, $alpha: 0.5);
+  font-family: $Roboto;
+  letter-spacing: 0;
+  letter-spacing: 1px;
+  line-height: 16px;
+  text-align: center;
+}
+.nav__link--active,
+.nav__link--contact {
+  color: rgba($color: $white, $alpha: 1);
+}
+
+.nav__drop-link {
+  font-size: 12px;
+  color: $white;
+}

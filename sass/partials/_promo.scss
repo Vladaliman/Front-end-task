@@ -1,0 +1,297 @@
+.promo {
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  padding: 120px 0 100px;
+  @media screen and (max-width: 1000px) {
+    padding: 60px 0 20px;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 50px 0 20px;
+  }
+}
+.promo__heading {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 30px;
+  }
+}
+
+.promo_category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 700px;
+  font-size: 18px;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.promo_category {
+  cursor: pointer;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 10px;
+  }
+}
+.active-category {
+  color: $gray-dark;
+  position: relative;
+
+  @media screen and (max-width: 600px) {
+    margin: 0px auto 10px auto;
+  }
+}
+.active-category::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  border-bottom: 2px solid $red;
+  transform: rotateX(45deg);
+}
+.promo__wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 1000px) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+.promo__article {
+  position: relative;
+  padding: 20px 2% 28px;
+  box-sizing: border-box;
+  width: 23%;
+  border: 1px solid $gray-lighter;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 15px 25px -20px rgba(0, 0, 0, 0.1);
+  @media screen and (max-width: 1000px) {
+    width: 40%;
+    padding: 25px 3% 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 85%;
+    max-width: 360px;
+    padding: 20px 15px 35px;
+  }
+}
+.promo__img {
+  height: 100px;
+  width: 100%;
+  max-width: 185px;
+  margin: 0 auto 13px;
+  &.q3 {
+    background: url("../../dist/Assets/Product-Images/product-card-audi-q3.png")
+      center / contain no-repeat;
+  }
+
+  &.a4 {
+    background: url("../../dist/Assets/Product-Images/product-card-audi-a4.png")
+      center / contain no-repeat;
+  }
+  &.a3 {
+    background: url("../../dist/Assets/Product-Images/product-card-audi-a3.png")
+      center / contain no-repeat;
+  }
+  &.a3::before {
+    content: "new";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 8px;
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-stretch: condensed;
+    background-color: rgb(163, 5, 255);
+    color: $white;
+    border-radius: 3px;
+  }
+  &.q7 {
+    background: url("../../dist/Assets/Product-Images/product-card-audi-q7.png")
+      center / contain no-repeat;
+  }
+  &.q7::before {
+    content: "new";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 8px;
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-stretch: condensed;
+    background-color: rgb(163, 5, 255);
+    color: $white;
+    border-radius: 3px;
+  }
+}
+
+.promo__caption {
+  display: block;
+  margin-bottom: 5px;
+}
+.promo__article-heading {
+  margin-bottom: 10px;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 5px;
+  }
+}
+.promo__configurator {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.promo__list {
+  list-style-type: none;
+  margin-bottom: 19px;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    max-width: 162px;
+    margin: 0 auto 15px;
+  }
+}
+
+.promo__item {
+  position: relative;
+  padding-left: 18px;
+  word-wrap: break-word;
+  &:before {
+    content: url(../assets/icons/Path.svg);
+    display: block;
+    font-size: 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.promo__price-caption {
+  margin-bottom: 3px;
+  display: block;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 7px;
+  }
+}
+.promo__button {
+  position: absolute;
+  right: 20px;
+  bottom: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 100%;
+  max-width: 30%;
+  border-radius: 17px;
+  background-color: rgba($color: $red, $alpha: 0.1);
+  &:hover {
+    background-color: rgba($color: $red, $alpha: 1);
+    color: $white;
+  }
+  @media screen and (max-width: 1000px) {
+    right: 25px;
+    bottom: 25px;
+    max-width: 34%;
+  }
+  @media screen and (max-width: 600px) {
+    position: relative;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    max-width: 140px;
+  }
+}
+//Typography
+.promo__heading {
+  color: $gray-dark;
+  text-align: center;
+}
+.promo__configurator {
+  text-align: center;
+  font-size: 12px;
+  color: rgb(0, 102, 255);
+}
+.promo__caption {
+  color: $gray-blue;
+  line-height: 18px;
+  text-align: center;
+  @media screen and (max-width: 1000px) {
+    font-size: 12px;
+  }
+}
+.promo__article-heading {
+  color: $gray-dark;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-align: center;
+  @media screen and (max-width: 600px) {
+    font-size: 19px;
+  }
+}
+.promo__item {
+  color: $gray-blue;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 30px;
+  @media screen and (max-width: 1000px) {
+    font-size: 12px;
+  }
+}
+
+.promo__price-caption {
+  color: $gray-blue;
+  font-family: $Roboto;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 13px;
+  @media screen and (max-width: 1000px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 600px) {
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 13px;
+  }
+}
+.promo__price-value {
+  color: $gray-dark;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30px;
+  @media screen and (max-width: 1000px) {
+    font-size: 19px;
+    line-height: 20px;
+  }
+  @media screen and (max-width: 600px) {
+    display: block;
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 19px;
+  }
+}
+.promo__button {
+  color: $red;
+  font-family: $Roboto;
+  font-size: 13px;
+  line-height: 16px;
+  @media screen and (max-width: 1000px) {
+    font-size: 12px;
+  }
+}

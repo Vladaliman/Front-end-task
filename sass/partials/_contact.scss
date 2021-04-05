@@ -1,0 +1,200 @@
+.contact {
+  width: 100%;
+  background: linear-gradient(135deg, #282a2f 0%, $black 100%);
+  padding: 120px 0 120px;
+  @media screen and (max-width: 1000px) {
+    padding: 60px 0 90px;
+  }
+  @media screen and (max-width: 580px) {
+    padding: 50px 0 120px;
+  }
+}
+.contact__wrapper {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+}
+.contact__text {
+  position: relative;
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 40px;
+  }
+}
+.contact__span {
+  margin-bottom: 15px;
+  @media screen and (max-width: 580px) {
+    margin-bottom: 10px;
+  }
+}
+.contact__heading {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  max-width: 570px;
+  @media screen and (max-width: 580px) {
+    max-width: 430px;
+  }
+}
+.contact__hero-img {
+  z-index: 0;
+  position: absolute;
+  top: 150px;
+  left: -325px;
+  width: 1075px;
+  height: 445px;
+  background: url("../../dist/Assets/Images/contact-form-img.png") no-repeat;
+  @media screen and (max-width: 1000px) {
+    left: 25%;
+    top: 110px;
+    width: 70%;
+    height: 300px;
+    background-size: contain;
+    min-width: 400px;
+  }
+  @media screen and (max-width: 580px) {
+    min-width: 300px;
+    top: 120px;
+  }
+}
+.contact__form {
+  background-color: $green;
+  padding: 52px 48px;
+  width: max-content;
+  @media screen and (max-width: 1000px) {
+    padding: 40px 40px;
+    margin: 0 auto;
+    width: 60%;
+    min-width: 450px;
+  }
+  @media screen and (max-width: 580px) {
+    width: 100%;
+    min-width: 0;
+    padding: 30px 30px;
+  }
+}
+.contact__input-placeholder,
+.contact__textarea-placeholder {
+  position: relative;
+}
+.contact__input,
+.contact__textarea {
+  width: 361px;
+  padding: 20px 12px;
+  border: 1px solid rgba($color: $white, $alpha: 0.25);
+  border-radius: 3px;
+  background-color: rgba($color: $white, $alpha: 0.15);
+  margin-bottom: 30px;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 580px) {
+    padding: 13px 10px;
+  }
+  &:valid {
+    + .contact__placeholder {
+      top: 0;
+      opacity: 0;
+    }
+  }
+}
+.contact__textarea {
+  border-radius: 0;
+  resize: none;
+  height: 150px;
+  outline: none;
+
+  @media screen and (max-width: 580px) {
+    height: 130px;
+  }
+}
+.contact__placeholder {
+  position: absolute;
+  pointer-events: none;
+  top: 23px;
+  left: 14px;
+  height: 14px;
+  transition: all ease 0.3s;
+  opacity: 1;
+  @media screen and (max-width: 580px) {
+    top: 17px;
+    left: 10px;
+    height: 12px;
+  }
+}
+.contact__placeholder--active {
+  top: 0px;
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+.contact__submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 125px;
+  border: 2px solid rgba($color: $white, $alpha: 0.3);
+  opacity: 0.99;
+  border-radius: 3px;
+  margin-left: 10px;
+  @media screen and (max-width: 1000px) {
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 580px) {
+    font-size: 13px;
+    height: 45px;
+    width: 110px;
+  }
+  &:hover {
+    border-color: $white;
+  }
+}
+
+//Typography
+
+.contact__heading {
+  color: $white;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 58px;
+  @media screen and (max-width: 1000px) {
+    font-size: 42px;
+  }
+  @media screen and (max-width: 580px) {
+    font-size: 34px;
+    line-height: 44px;
+  }
+}
+
+.contact__input,
+.contact__textarea {
+  font-family: $Montserrat;
+  color: $white;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  @media screen and (max-width: 580px) {
+    font-size: 14px;
+  }
+}
+.contact__placeholder {
+  font-family: $Roboto;
+  font-size: 14px;
+  color: $gray-light;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  @media screen and (max-width: 580px) {
+    font-size: 12px;
+  }
+}
+.contact__asterisk {
+  color: $red;
+}
+.contact__submit {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: $white;
+  @media screen and (max-width: 580px) {
+    font-size: 13px;
+  }
+}

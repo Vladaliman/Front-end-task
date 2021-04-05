@@ -1,0 +1,16 @@
+@import "./partials/reset";
+@import "./partials/variables";
+@import "./partials/slick";
+@import "./partials/slick-theme";
+@import "./partials/nav";
+@import "./partials/carousel";
+@import "./partials/about";
+@import "./partials/featured";
+@import "./partials/promo";
+@import "./partials/contact";
+@import "./partials/modal";
+@import "./partials/footer";
+
+* {
+  transition: all ease-out 0.5s;
+}
