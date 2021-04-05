@@ -1959,18 +1959,18 @@ body {
   }
 }
 
-.contact__hero-img {
+.contact__car-img {
   z-index: 0;
   position: absolute;
   top: 150px;
   left: -325px;
   width: 1075px;
   height: 445px;
-  background: url("..Assets/Images/contact-form-img.png") no-repeat;
+  background: url("../Assets/Images/contact-form-img.png") no-repeat;
 }
 
 @media screen and (max-width: 1000px) {
-  .contact__hero-img {
+  .contact__car-img {
     left: 25%;
     top: 110px;
     width: 70%;
@@ -1981,7 +1981,7 @@ body {
 }
 
 @media screen and (max-width: 580px) {
-  .contact__hero-img {
+  .contact__car-img {
     min-width: 300px;
     top: 120px;
   }
