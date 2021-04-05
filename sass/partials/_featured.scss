@@ -2,8 +2,7 @@
   width: 100%;
   padding: 105px 0 105px;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
-    url("../../dist/Assets/Images/section-banner-1920.jpg") center / cover
-      no-repeat;
+    url("../Assets/Images/section-banner-1920.jpg") center / cover no-repeat;
   @media screen and (max-width: 580px) {
     padding: 50px 0 20px;
   }

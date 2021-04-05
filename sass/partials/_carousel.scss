@@ -11,18 +11,17 @@
   /* images for the slider */
   &.img1 {
     background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
-      url("../../dist/Assets/Images/header-img-1440.jpg") center / cover
-        no-repeat;
+      url("../Assets/Images/header-img-1440.jpg") center / cover no-repeat;
   }
   &.img2 {
     background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
-      url("../../dist/Assets/Images/mattia-righetti-CuC-b8f3RYc-unsplash.jpg")
-        center / cover no-repeat;
+      url("../Assets/Images/mattia-righetti-CuC-b8f3RYc-unsplash.jpg") center /
+        cover no-repeat;
   }
   &.img3 {
     background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
-      url("../../dist/Assets/Images/olav-tvedt--oVaYMgBMbs-unsplash.jpg") center /
-        cover no-repeat;
+      url("../Assets/Images/olav-tvedt--oVaYMgBMbs-unsplash.jpg") center / cover
+        no-repeat;
   }
   @media screen and (max-width: 1000px) {
     padding-bottom: 130px;

@@ -89,17 +89,17 @@
   max-width: 185px;
   margin: 0 auto 13px;
   &.q3 {
-    background: url("../../dist/Assets/Product-Images/product-card-audi-q3.png")
-      center / contain no-repeat;
+    background: url("../Assets/Product-Images/product-card-audi-q3.png") center /
+      contain no-repeat;
   }
 
   &.a4 {
-    background: url("../../dist/Assets/Product-Images/product-card-audi-a4.png")
-      center / contain no-repeat;
+    background: url("../Assets/Product-Images/product-card-audi-a4.png") center /
+      contain no-repeat;
   }
   &.a3 {
-    background: url("../../dist/Assets/Product-Images/product-card-audi-a3.png")
-      center / contain no-repeat;
+    background: url("../Assets/Product-Images/product-card-audi-a3.png") center /
+      contain no-repeat;
   }
   &.a3::before {
     content: "new";
@@ -117,8 +117,8 @@
     border-radius: 3px;
   }
   &.q7 {
-    background: url("../../dist/Assets/Product-Images/product-card-audi-q7.png")
-      center / contain no-repeat;
+    background: url("../Assets/Product-Images/product-card-audi-q7.png") center /
+      contain no-repeat;
   }
   &.q7::before {
     content: "new";
